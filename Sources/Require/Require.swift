@@ -299,3 +299,148 @@ public func require<T,
         k7
     )
 }
+
+public func require<T,
+                    K0,
+                    K1,
+                    K2,
+                    K3,
+                    K4,
+                    K5,
+                    K6,
+                    K7,
+                    K8>(from t: T,
+                        _ _k0: KeyPath<T, K0?>,
+                        _ _k1: KeyPath<T, K1?>,
+                        _ _k2: KeyPath<T, K2?>,
+                        _ _k3: KeyPath<T, K3?>,
+                        _ _k4: KeyPath<T, K4?>,
+                        _ _k5: KeyPath<T, K5?>,
+                        _ _k6: KeyPath<T, K6?>,
+                        _ _k7: KeyPath<T, K7?>,
+                        _ _k8: KeyPath<T, K8?>) throws -> (
+                            K0,
+                            K1,
+                            K2,
+                            K3,
+                            K4,
+                            K5,
+                            K6,
+                            K7,
+                            K8
+                        ) {
+    guard let k0 = t[keyPath: _k0] else {
+        throw "Missing \(_k0)"
+    }
+    guard let k1 = t[keyPath: _k1] else {
+        throw "Missing \(_k1)"
+    }
+    guard let k2 = t[keyPath: _k2] else {
+        throw "Missing \(_k2)"
+    }
+    guard let k3 = t[keyPath: _k3] else {
+        throw "Missing \(_k3)"
+    }
+    guard let k4 = t[keyPath: _k4] else {
+        throw "Missing \(_k4)"
+    }
+    guard let k5 = t[keyPath: _k5] else {
+        throw "Missing \(_k5)"
+    }
+    guard let k6 = t[keyPath: _k6] else {
+        throw "Missing \(_k6)"
+    }
+    guard let k7 = t[keyPath: _k7] else {
+        throw "Missing \(_k7)"
+    }
+    guard let k8 = t[keyPath: _k8] else {
+        throw "Missing \(_k8)"
+    }
+    return (
+        k0,
+        k1,
+        k2,
+        k3,
+        k4,
+        k5,
+        k6,
+        k7,
+        k8
+    )
+}
+
+public func require<T,
+                    K0,
+                    K1,
+                    K2,
+                    K3,
+                    K4,
+                    K5,
+                    K6,
+                    K7,
+                    K8,
+                    K9>(from t: T,
+                        _ _k0: KeyPath<T, K0?>,
+                        _ _k1: KeyPath<T, K1?>,
+                        _ _k2: KeyPath<T, K2?>,
+                        _ _k3: KeyPath<T, K3?>,
+                        _ _k4: KeyPath<T, K4?>,
+                        _ _k5: KeyPath<T, K5?>,
+                        _ _k6: KeyPath<T, K6?>,
+                        _ _k7: KeyPath<T, K7?>,
+                        _ _k8: KeyPath<T, K8?>,
+                        _ _k9: KeyPath<T, K9?>) throws -> (
+                            K0,
+                            K1,
+                            K2,
+                            K3,
+                            K4,
+                            K5,
+                            K6,
+                            K7,
+                            K8,
+                            K9
+                        ) {
+    guard let k0 = t[keyPath: _k0] else {
+        throw "Missing \(_k0)"
+    }
+    guard let k1 = t[keyPath: _k1] else {
+        throw "Missing \(_k1)"
+    }
+    guard let k2 = t[keyPath: _k2] else {
+        throw "Missing \(_k2)"
+    }
+    guard let k3 = t[keyPath: _k3] else {
+        throw "Missing \(_k3)"
+    }
+    guard let k4 = t[keyPath: _k4] else {
+        throw "Missing \(_k4)"
+    }
+    guard let k5 = t[keyPath: _k5] else {
+        throw "Missing \(_k5)"
+    }
+    guard let k6 = t[keyPath: _k6] else {
+        throw "Missing \(_k6)"
+    }
+    guard let k7 = t[keyPath: _k7] else {
+        throw "Missing \(_k7)"
+    }
+    guard let k8 = t[keyPath: _k8] else {
+        throw "Missing \(_k8)"
+    }
+    guard let k9 = t[keyPath: _k9] else {
+        throw "Missing \(_k9)"
+    }
+    return (
+        k0,
+        k1,
+        k2,
+        k3,
+        k4,
+        k5,
+        k6,
+        k7,
+        k8,
+        k9
+    )
+}
