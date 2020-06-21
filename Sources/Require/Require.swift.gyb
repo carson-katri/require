@@ -1,0 +1,30 @@
+extension String: Error {
+    
+}
+
+% for i in range(1, 9):
+    public func require<T,
+%            for j in range(0, i):
+                 K${j}${"," if (j != i - 1) else ""}
+%            end
+                >(from t: T,
+%             for j in range(0, i):
+                  _ _k${j}: KeyPath<T, K${j}?>${"," if (j != i - 1) else ""}
+%             end
+                 ) throws -> (
+%               for j in range(0, i):
+                    K${j}${"," if (j != i - 1) else ""}
+%               end
+                 ) {
+%   for j in range(0, i):
+        guard let k${j} = t[keyPath: _k${j}] else {
+            throw "Missing \(_k${j})"
+        }
+%   end
+        return (
+%       for j in range(0, i):
+            k${j}${"," if (j != i - 1) else ""}
+%       end
+        )
+    }
+% end
