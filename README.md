@@ -15,8 +15,11 @@ The `require` function creates those guards for you 🎉
 You can pass up to 10 KeyPaths.
 
 ## Installation
-1. Add the Swift package
-2. Copy [Require.swift](Sources/Require/Require.swift) to your project.
+* Add the Swift package
+
+*or*
+
+* Copy [Require.swift](Sources/Require/Require.swift) to your project.
 
 ## Contributing
 The source is generated with GYB (`brew install nshipster/formulae/gyb`), and formatted with [SwiftFormat](https://github.com/nicklockwood/SwiftFormat):
